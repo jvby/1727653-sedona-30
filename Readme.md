@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Василий](https://up.htmlacademy.ru/htmlcss/30/user/1727653).
-* Наставник: [Анастасия Ничипорчук] (https://htmlacademy.ru/profile/id612797).
+* Наставник: [Анастасия Ничипорчук](https://htmlacademy.ru/profile/id612797).
 
 ---
 
