@@ -1,0 +1,311 @@
+@font-face {
+  font-family: "PT Sans";
+  src: local("PT Sans"),
+       url("../fonts/PTSans.woff2") format("woff2"),
+       url("../fonts/PTSans.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PT Sans Bold";
+  src: local("PT Sans Bold"),
+       url("../fonts/PTSans-Bold.woff2") format("woff2"),
+       url("../fonts/PTSans-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --basic-black: #000000;
+  --basic-blue: #81B3D2;
+  --basic-normal-grey-button: #766357;
+  --basic-select-grey-button: #604E43;
+  --basic-push-grey-button: #503E33;
+  --basic-normal-blue-button: #81B3D2;
+  --basic-select-blue-button: #669EC0;
+  --basic-push-blues-button: #5496BD;
+  --basic-normal-grey-input: #F2F2F2;
+  --basic-select-grey-input: #EBEBEB;
+  --basic-select-blue-nav: #81B3D2;
+  --basic-natural-white: #EEEEEE;
+  --basic-natural-grey: #E5E5E5;
+  --basic-text-grey: #333333;
+  --basic-white: #FFFFFF;
+}
+
+.page-body {
+  font-family: "PT Sans Bold", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  font-style: normal;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  background-color: var(--basic-white);
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation-logo {
+  text-align: center;
+}
+
+.site-navigation {
+  list-style: none;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--basic-black);
+}
+
+.site-navigation a {
+  color: var(--basic-black);
+}
+
+.site-navigation a:hover {
+  color: var(--basic-select-blue-nav);
+}
+
+.site-navigation a:active {
+  opacity: 0.3;
+}
+
+.main-logo-title h1{
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.main-logo-title p{
+  line-height: 26px;
+  color: var(--basic-text-grey);
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: 400;
+}
+.feature_1 {
+  color: var(--basic-white);
+  background-color: var(--basic-blue);
+}
+.feature_1-title h2{
+  font-size: 21px;
+}
+
+.infrastructure-list {
+  list-style: none;
+}
+
+.infrastructure-housing b {
+  font-size: 21px;
+}
+
+.infrastructure-housing p {
+  color: var(--basic-text-grey);
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: 400;
+}
+
+.infrastructure-food b {
+  font-size: 21px;
+}
+
+.infrastructure-food p {
+  color: var(--basic-text-grey);
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: 400;
+}
+
+.infrastructure-souvenir b {
+  font-size: 21px;
+}
+
+.infrastructure-souvenir p {
+  color: var(--basic-text-grey);
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: 400;
+}
+
+.feature_2 {
+  color: var(--basic-white);
+  background-color: var(--basic-blue);
+}
+.feature_2-title h2 {
+  font-size: 21px;
+}
+
+.feature_3_4_5 {
+  background-color: var(--basic-natural-white);
+}
+
+.feature_3_4_5-list {
+  list-style: none;
+}
+
+.feature_3-title h2 {
+  font-size: 21px;
+}
+
+.feature_3-title span {
+  color: var(--basic-text-grey);
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: 400;
+}
+
+.feature_3-title p {
+  color: var(--basic-text-grey);
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: 400;
+}
+
+.feature_4-title h2 {
+  font-size: 21px;
+}
+
+.feature_4-title p {
+  color: var(--basic-text-grey);
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: 400;
+}
+
+.feature_4-title span {
+  color: var(--basic-text-grey);
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: 400;
+}
+
+.feature_5-title h2 {
+  font-size: 21px;
+}
+
+.feature_5-title p {
+  color: var(--basic-text-grey);
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: 400;
+}
+
+.feature_5-title span {
+  color: var(--basic-text-grey);
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: 400;
+}
+.booking h2 {
+  font-size: 30px;
+  line-height: 24px;
+}
+
+.booking p {
+  line-height: 24px;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: 400;
+}
+
+.booking button{
+  background-color: var(--basic-normal-grey-button);
+  font: inherit;
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--basic-white);
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.booking button:hover {
+  background-color: var(--basic-select-grey-button);
+}
+
+.booking button:active {
+  color: var(--basic-push-grey-button);
+}
+
+.booking-window {
+box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+}
+
+.booking-form {
+  font: inherit;
+  line-height: 26px;
+}
+
+.booking-form input {
+  background-color: var(--basic-normal-grey-input);
+  border: 0
+}
+
+.booking-form input:hover {
+  background-color: var(--basic-select-grey-input);
+  border: 0
+}
+
+.booking-form input:focus {
+  background-color: var(--basic-white);
+  border: 2px solid #E5E5E5;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.booking-form button {
+  color: var(--basic-white);
+  background-color: var(--basic-normal-blue-button);
+  font: inherit;
+  font-size: 21px;
+  line-height: 27px;
+  text-transform: uppercase;
+  border: 0
+}
+
+.booking-form button:hover {
+  background-color: var(--basic-select-blue-button);
+  color: var(--basic-white);
+}
+
+.booking-form button:active {
+  background-color: var(---basic-push-blues-button);
+  color: var(--basic-white);
+  border: 0;
+  outline: none;
+}
+
+.main-footer{
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.footer-contacts {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.footer-contacts a {
+  color: inherit;
+}
+
+.footer-contacts a:hover,
+.footer-contacts a:focus {
+  text-decoration: none;
+}
+
+.footer-social-list {
+  list-style: none;
+}
+
+.social-button img{
+  background-color: var(--basic-normal-blue-button);
+}
+
+.social-button img:hover {
+  background-color: var(--basic-select-blue-button);
+}
+
+.social-button img:active {
+  background-color: var(---basic-push-blues-button);
+}
+
+.footer-copyright {
+  line-height: 26px;
+}
