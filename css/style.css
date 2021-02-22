@@ -8,10 +8,10 @@
 }
 
 @font-face {
-  font-family: "PT Sans Bold";
+  font-family: "PT Sans";
   src: local("PT Sans Bold"),
-       url("../fonts/PTSans-Bold.woff2") format("woff2"),
-       url("../fonts/PTSans-Bold.woff") format("woff");
+        url("../fonts/PTSans.woff2") format("woff2"),
+        url("../fonts/PTSans.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
@@ -32,18 +32,20 @@
   --basic-natural-grey: #E5E5E5;
   --basic-text-grey: #333333;
   --basic-white: #FFFFFF;
+  --basic-body-background: #888888;
 }
 
 .page-body {
-  font-family: "PT Sans Bold", Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 700;
   font-style: normal;
   color: var(--basic-black);
   text-transform: uppercase;
-  background-color: var(--basic-white);
+  background-color: var(--basic-body-background);
   text-align: center;
+  min-height: 100%;
 }
 
 img {
@@ -55,6 +57,10 @@ a {
   text-decoration: none;
 }
 
+.main-header {
+  background-color: var(--basic-white);
+}
+
 .main-navigation-logo {
   text-align: center;
 }
@@ -64,6 +70,8 @@ a {
   font-size: 16px;
   line-height: 26px;
   color: var(--basic-black);
+  margin: 0;
+  padding: 0;
 }
 
 .site-navigation a {
@@ -78,27 +86,32 @@ a {
   opacity: 0.3;
 }
 
-.main-logo-title h1{
+.main-container {
+  background-color: var(--basic-white);
+}
+
+.main-logo-title h1 {
   font-size: 21px;
   line-height: 26px;
 }
 
-.main-logo-title p{
+.main-logo-title p {
   line-height: 26px;
   color: var(--basic-text-grey);
-  font-family: "PT Sans", Arial, sans-serif;
   font-weight: 400;
 }
-.feature_1 {
+.feature-one {
   color: var(--basic-white);
   background-color: var(--basic-blue);
 }
-.feature_1-title h2{
+.feature-one-title h2 {
   font-size: 21px;
 }
 
 .infrastructure-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .infrastructure-housing b {
@@ -107,7 +120,6 @@ a {
 
 .infrastructure-housing p {
   color: var(--basic-text-grey);
-  font-family: "PT Sans", Arial, sans-serif;
   font-weight: 400;
 }
 
@@ -117,7 +129,6 @@ a {
 
 .infrastructure-food p {
   color: var(--basic-text-grey);
-  font-family: "PT Sans", Arial, sans-serif;
   font-weight: 400;
 }
 
@@ -127,71 +138,66 @@ a {
 
 .infrastructure-souvenir p {
   color: var(--basic-text-grey);
-  font-family: "PT Sans", Arial, sans-serif;
   font-weight: 400;
 }
 
-.feature_2 {
+.feature-two {
   color: var(--basic-white);
   background-color: var(--basic-blue);
 }
-.feature_2-title h2 {
+.feature-two-title h2 {
   font-size: 21px;
 }
 
-.feature_3_4_5 {
+.feature-three-four-five {
   background-color: var(--basic-natural-white);
 }
 
-.feature_3_4_5-list {
+.feature-three-four-five-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.feature_3-title h2 {
+.feature-three-title h2 {
   font-size: 21px;
 }
 
-.feature_3-title span {
+.feature-three-title span {
   color: var(--basic-text-grey);
-  font-family: "PT Sans", Arial, sans-serif;
   font-weight: 400;
 }
 
-.feature_3-title p {
+.feature-three-title p {
   color: var(--basic-text-grey);
-  font-family: "PT Sans", Arial, sans-serif;
   font-weight: 400;
 }
 
-.feature_4-title h2 {
+.feature-four-title h2 {
   font-size: 21px;
 }
 
-.feature_4-title p {
+.feature-four-title p {
   color: var(--basic-text-grey);
-  font-family: "PT Sans", Arial, sans-serif;
   font-weight: 400;
 }
 
-.feature_4-title span {
+.feature-four-title span {
   color: var(--basic-text-grey);
-  font-family: "PT Sans", Arial, sans-serif;
   font-weight: 400;
 }
 
-.feature_5-title h2 {
+.feature-five-title h2 {
   font-size: 21px;
 }
 
-.feature_5-title p {
+.feature-five-title p {
   color: var(--basic-text-grey);
-  font-family: "PT Sans", Arial, sans-serif;
   font-weight: 400;
 }
 
-.feature_5-title span {
+.feature-five-title span {
   color: var(--basic-text-grey);
-  font-family: "PT Sans", Arial, sans-serif;
   font-weight: 400;
 }
 .booking h2 {
@@ -201,11 +207,10 @@ a {
 
 .booking p {
   line-height: 24px;
-  font-family: "PT Sans", Arial, sans-serif;
   font-weight: 400;
 }
 
-.booking button{
+.booking button {
   background-color: var(--basic-normal-grey-button);
   font: inherit;
   font-size: 21px;
@@ -225,7 +230,7 @@ a {
 }
 
 .booking-window {
-box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
 }
 
 .booking-form {
@@ -272,7 +277,7 @@ box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
   outline: none;
 }
 
-.main-footer{
+.main-footer {
   background: rgba(255, 255, 255, 0.9);
 }
 
@@ -292,6 +297,8 @@ box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
 
 .footer-social-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .social-button img{
@@ -309,3 +316,41 @@ box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
 .footer-copyright {
   line-height: 26px;
 }
+
+.main-catalog-fildset {
+  background-color: var(--basic-blue);
+  color: var(--basic-white);
+}
+
+.main-catalog-fildset-infrastructure {
+  border: 0;
+  text-align: left;
+}
+
+.main-catalog-fildset-infrastructure-name {
+  font-size: 16px;
+}
+
+.main-catalog-fildset-infrastructure-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+}
+
+.main-catalog-fildset-type {
+  border: 0;
+  text-align: left;
+}
+
+.main-catalog-fildset-type-name {
+  font-size: 16px;
+}
+
+.main-catalog-fildset-type-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+}
+
