@@ -65,60 +65,81 @@
               </div>
             </ul>
           </fieldset>
-          <fieldset>
-            <legend>Стоимость в сутки:</legend>
+          <fieldset class="main-catalog-fildset-price">
+            <legend class="main-catalog-fildset-price-name">Стоимость в сутки:</legend>
             <ul>
-              <li>
-                <input type="text" name="price-from" id="filter-price-from" value="0">
-                <label for="filter-price-from">От</label>
-              </li>
-              <li>
-                <input type="text" name="price-to" id="filter-price-to" value="3000">
-                <label for="filter-price-to">До</label>
-              </li>
+              <div class="main-catalog-fildset-price-list">
+                <li>
+                  <input type="text" name="price-from" id="filter-price-from" value="0">
+                  <label for="filter-price-from">От</label>
+                </li>
+                <li>
+                  <input type="text" name="price-to" id="filter-price-to" value="3000">
+                  <label for="filter-price-to">До</label>
+                </li>
+              </div>
             </ul>
           </fieldset>
-          <button type="submit">Показать</button>
+          <button class="main-catalog-fildset-confirm-button" type="submit">Показать</button>
         </form>
       </section>
-      <section>
-          <p>Найдено:3</p>
-          <button type="button">По цене</button>
-          <button type="button">По типу</button>
-          <button type="button">По рейтингу</button>
+      <section class= "main-catalog-quantity">
+          <p class="main-catalog-quantity-findings">Найдено:3</p>
       </section>
-      <section>
+      <section class="main-catalog-sorting">
+          <p class="main-catalog-sorting-name">Сортировка:</p>
+          <button class="main-catalog-sorting-price" type="button">По цене</button>
+          <button class="main-catalog-sorting-type" type="button">По типу</button>
+          <button class="main-catalog-sorting-rating" type="button">По рейтингу</button>
+          <button class="main-catalog-sorting-up" type="button"></button>
+          <button class="main-catalog-sorting-down" type="button"></button>
+      </section>
+      <section class="main-catalog-result">
         <ul>
-          <li>
-            <img src="img/amara_resort.jpg" width="135" height="90" alt="Изображение Amara Resort & Spa">
-            <b>Amara Resort & Spa</b>
-            <p>Гостиница</p>
-            <p>От 4000 Р.</p>
-            <p>Рейтинг: 8,5</p>
-            <span>****</span>
-            <a href="#">Подробнее</a>
-            <a href="#">Забронировать</a>
-          </li>
-          <li>
-            <img src="img/desert_quail_inn.jpg" width="135" height="90" alt="Изображение Desert Quail Inn">
-            <b>Desert Quail Inn</b>
-            <p>Мотель</p>
-            <p>От 3000 Р.</p>
-            <p>Рейтинг: 8,9</p>
-            <span>***</span>
-            <a href="#">Подробнее</a>
-            <a href="#">Забронировать</a>
-          </li>
-          <li>
-            <img src="img/villas_ at_poco_ diablo.jpg" width="135" height="90" alt="Изображение Villas at Poco Diablo">
-            <b>Villas at Poco Diablo</b>
-            <p>Апартаменты</p>
-            <p>От 2000 Р.</p>
-            <p>Рейтинг: 9,2</p>
-            <span>**</span>
-            <a href="#">Подробнее</a>
-            <a href="#">Забронировать</a>
-          </li>
+          <div class="main-catalog-result-list">
+            <li class="main-catalog-result-list-one">
+              <img class="main-catalog-result-list-one-img" src="img/amara_resort.jpg" width="135" height="90" alt="Изображение Amara Resort & Spa">
+              <b class="main-catalog-result-list-one-name">Amara Resort & Spa</b>
+              <p class="main-catalog-result-list-one-type">Гостиница</p>
+              <p class="main-catalog-result-list-one-price">От 4000 Р.</p>
+              <p class="main-catalog-result-list-one-rating">Рейтинг: 8,5</p>
+              <span class="main-catalog-result-list-one-stars">
+                <img src="img/star.png" width="18" height="17" alt="Количество звезд">
+                <img src="img/star.png" width="18" height="17" alt="Количество звезд">
+                <img src="img/star.png" width="18" height="17" alt="Количество звезд">
+                <img src="img/star.png" width="18" height="17" alt="Количество звезд">
+              </span>
+              <a class="main-catalog-result-list-one-details" href="#">Подробнее</a>
+              <a class="main-catalog-result-list-one-booking" href="#">Забронировать</a>
+            </li>
+            <li class="main-catalog-booking-list-two">
+              <img class="main-catalog-result-list-two-img" src="img/desert_quail_inn.jpg" width="135" height="90" alt="Изображение Desert Quail Inn">
+              <b class="main-catalog-result-list-two-name">Desert Quail Inn</b>
+              <p class="main-catalog-result-list-two-type">Мотель</p>
+              <p class="main-catalog-result-list-two-price">От 3000 Р.</p>
+              <p class="main-catalog-result-list-two-rating">Рейтинг: 8,9</p>
+              <span class="main-catalog-result-list-two-stars">
+                <img src="img/star.png" width="18" height="17" alt="Количество звезд">
+                <img src="img/star.png" width="18" height="17" alt="Количество звезд">
+                <img src="img/star.png" width="18" height="17" alt="Количество звезд">
+              </span>
+              <a class="main-catalog-result-list-two-details" href="#">Подробнее</a>
+              <a class="main-catalog-result-list-two-booking" href="#">Забронировать</a>
+            </li>
+            <li class="main-catalog-booking-list-three">
+              <img class="main-catalog-result-list-three-img" src="img/villas_ at_poco_ diablo.jpg" width="135" height="90" alt="Изображение Villas at Poco Diablo">
+              <b class="main-catalog-result-list-three-name">Villas at Poco Diablo</b>
+              <p class="main-catalog-result-list-three-type">Апартаменты</p>
+              <p class="main-catalog-result-list-three-price">От 2000 Р.</p>
+              <p class="main-catalog-result-list-three-rating">Рейтинг: 9,2</p>
+              <span class="main-catalog-result-list-three-stars">
+                <img src="img/star.png" width="18" height="17" alt="Количество звезд">
+                <img src="img/star.png" width="18" height="17" alt="Количество звезд">
+              </span>
+              <a class="main-catalog-result-list-three-details" href="#">Подробнее</a>
+              <a class="main-catalog-result-list-three-booking" href="#">Забронировать</a>
+            </li>
+          </div>
         </ul>
       </section>
     </main>
