@@ -56,7 +56,7 @@
   padding: 0px;
   min-height: 100%;
   display: grid;
-  grid-template-rows: min-content 1fr min-content;
+  grid-template-rows: min-content 14px 1fr min-content;
   align-content: start;
 }
 
@@ -71,18 +71,13 @@ a {
 
 .main-header {
   width: 1200px;
-  margin: 0 auto;
-  background-color: var(--basic-white);
   box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
-}
-
-.main-navigation {
+  grid-row: 1 / 3;
+  grid-column: 2 / 3;
   display: grid;
-  grid-template-columns: 1fr auto 1fr;
-}
-
-.main-navigation-logo {
-  text-align: center;
+  grid-template-columns: 1fr 138px 1fr;
+  grid-template-rows: 56px 14px;
+  z-index: 1;
 }
 
 .site-navigation-left {
@@ -92,6 +87,9 @@ a {
   color: var(--basic-black);
   margin: 0;
   padding: 0;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  background-color: var(--basic-white);
 }
 
 .site-navigation-left a {
@@ -106,6 +104,12 @@ a {
   opacity: 0.3;
 }
 
+.main-navigation-logo {
+  text-align: center;
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+}
+
 .site-navigation-right {
   list-style: none;
   font-size: 16px;
@@ -113,6 +117,9 @@ a {
   color: var(--basic-black);
   margin: 0;
   padding: 0;
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+  background-color: var(--basic-white);
 }
 
 .site-navigation-right a {
@@ -126,12 +133,18 @@ a {
 .site-navigation-right a:active {
   opacity: 0.3;
 }
-
+.main-header-layout {
+  opacity: 1;
+  height: 14px;
+  grid-column: 1 / 4;
+  grid-row: 2 / 3;
+}
 .main-container {
   background-color: var(--basic-white);
   width: 1200px;
-  margin: 0 auto;
   box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+  grid-row: 2 / 5;
+  grid-column: 2 / 3;
 }
 
 .main-logo {
@@ -145,6 +158,7 @@ a {
   grid-column: 1 / -1;
 }
 .main-logo-picture {
+  margin: auto;
   grid-row: 1 / 2;
   grid-column: 1 / -1;
 }
@@ -152,16 +166,21 @@ a {
 .main-logo-shape {
   grid-row: 1 / 2;
   grid-column: 1 / -1;
+  margin-top: auto;
 }
 
 .main-logo-title {
   grid-row: 2 / 3;
   grid-column: 1 / -1;
+  margin: auto;
 }
 
 .main-logo-title h1 {
   font-size: 21px;
   line-height: 26px;
+  width: 470px;
+  height: 80px;
+  margin-bottom: 16px;
 }
 
 .main-logo-title p {
@@ -176,43 +195,110 @@ a {
   color: var(--basic-white);
   background-color: var(--basic-blue);
 }
+
+.feature-one-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
 .feature-one-title h2 {
-  font-size: 21px;
+  font-weight: 21px;
+  margin: 0;
+}
+
+.feature-one-title span {
+  display: block;
+  font-weight: 400;
+}
+
+.feature-one-title p {
+  font-weight: 400;
+  margin: 0;
 }
 
 .infrastructure-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  height: 330px;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
+.infrastructure-housing {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 400px;
+  height: 220px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 .infrastructure-housing b {
+  display: block;
   font-size: 21px;
 }
 
 .infrastructure-housing p {
   color: var(--basic-text-grey);
   font-weight: 400;
+  margin: 0;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.infrastructure-food {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 400px;
+  height: 220px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .infrastructure-food b {
+  display: block;
   font-size: 21px;
 }
 
 .infrastructure-food p {
   color: var(--basic-text-grey);
   font-weight: 400;
+  margin: 0;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.infrastructure-souvenir {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 400px;
+  height: 220px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .infrastructure-souvenir b {
+  display: block;
   font-size: 21px;
 }
 
 .infrastructure-souvenir p {
   color: var(--basic-text-grey);
   font-weight: 400;
+  margin: 0;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .feature-two {
@@ -222,94 +308,182 @@ a {
   color: var(--basic-white);
   background-color: var(--basic-blue);
 }
+
+.feature-two-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
 .feature-two-title h2 {
   font-size: 21px;
+  margin: 0;
+}
+
+.feature-two-title span {
+  display: block;
+  font-weight: 400;
+}
+
+.feature-two-title p {
+  font-weight: 400;
+  margin: 0;
 }
 
 .feature-three-four-five {
   background-color: var(--basic-natural-white);
+  height: 256px;
 }
 
 .feature-three-four-five-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
+.feature-three-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 155px;
+  margin-top: 47px;
+  margin-bottom: 54px;
+}
+
 .feature-three-title h2 {
   font-size: 21px;
+  margin: 0;
 }
 
 .feature-three-title span {
   color: var(--basic-text-grey);
   font-weight: 400;
+  display: block;
+
 }
 
 .feature-three-title p {
   color: var(--basic-text-grey);
   font-weight: 400;
+  margin: 0;
+}
+
+.feature-four-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 155px;
+  margin-top: 47px;
+  margin-bottom: 54px;
 }
 
 .feature-four-title h2 {
   font-size: 21px;
+  margin: 0;
 }
 
 .feature-four-title p {
   color: var(--basic-text-grey);
   font-weight: 400;
+  margin: 0;
 }
 
 .feature-four-title span {
   color: var(--basic-text-grey);
   font-weight: 400;
+  display: block;
+}
+
+.feature-five-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 155px;
+  margin-top: 47px;
+  margin-bottom: 54px;
 }
 
 .feature-five-title h2 {
   font-size: 21px;
+  margin: 0;
 }
 
 .feature-five-title p {
   color: var(--basic-text-grey);
   font-weight: 400;
+  margin: 0;
 }
 
 .feature-five-title span {
   color: var(--basic-text-grey);
   font-weight: 400;
+  display: block;
 }
+
+.booking {
+  height: 205px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .booking h2 {
   font-size: 30px;
   line-height: 24px;
+  margin-top: 58px;
 }
 
 .booking p {
   line-height: 24px;
   font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 40px;
 }
-
-.booking button {
+.booking-window-container {
+  display: grid;
+  grid-template-columns: 316px 1fr 316px;
+  grid-template-rows: 1f 1f;
+}
+.booking-button-find {
   background-color: var(--basic-normal-grey-button);
   font: inherit;
   font-size: 21px;
   line-height: 26px;
+  width: 568px;
+  height: 86px;
   color: var(--basic-white);
-  align-items: center;
   text-align: center;
   text-transform: uppercase;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
 }
 
-.booking button:hover {
+.booking-button-find:hover {
   background-color: var(--basic-select-grey-button);
 }
 
-.booking button:active {
+.booking-button-find:active {
   color: var(--basic-push-grey-button);
 }
 
 .booking-window {
   box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+  width: 568px;
+  height: 395px;
+  margin: 0 auto;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  z-index: 1;
+  background-color: var(--basic-white);
 }
 
 .booking-form {
@@ -317,9 +491,13 @@ a {
   line-height: 26px;
 }
 
+.booking-form-date-from {
+  margin-top: 0;
+}
+
 .booking-form input {
   background-color: var(--basic-normal-grey-input);
-  border: 0
+  border: 0;
 }
 
 .booking-form input:hover {
@@ -356,13 +534,20 @@ a {
   outline: none;
 }
 
+.booking-map {
+  grid-column: 1 / 4;
+  grid-row: 2 / 3;
+}
+
 .main-footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   width: 1200px;
-  margin: 0 auto;
   background: rgba(255, 255, 255, 0.9);
   box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+  grid-row: 4 / 5;
+  grid-column: 2 / 3;
+  z-index: 1;
 }
 
 .footer-contacts {
