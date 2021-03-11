@@ -20,8 +20,6 @@
           <li><a href="#">Карта штата</a></li>
           <li><a href="catalog.html">Гостиницы</a></li>
         </ul>
-      <div class="main-header-layout">
-      </div>
     </header>
     <main class="main-container">
       <section class="main-logo">
@@ -115,8 +113,7 @@
       <div class="booking-window-container">
         <button type="button" class="booking-button-find">Поиск гостиницы в Седоне</button>
         <section class="booking-window">
-          <div class="booking-form">
-            <form action="https://echo.htmlacademy.ru" method="post">
+            <form action="https://echo.htmlacademy.ru" method="post" class="booking-form">
               <p class="booking-form-date-from">
                 <label for="booking-date-from">Дата заезда:</label>
                 <input id="booking-date-from" type="date" name="date-from" value="2017-04-24" class="for">
@@ -133,9 +130,8 @@
                 <label for="childens-number">Дети:</label>
                 <input id="childrens-number" type="number" name="childens" min="0" value="0">
               </p>
-              <button type="submit">Найти</button>
+              <button type="submit" class="booking-form-find-button">Найти</button>
             </form>
-          </div>
         </section>
         <section class="booking-map">
           <img src="img/map.png" width="1199" height="594" alt="Карта">
