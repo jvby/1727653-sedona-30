@@ -114,22 +114,26 @@
         <button type="button" class="booking-button-find">Поиск гостиницы в Седоне</button>
         <section class="booking-window">
             <form action="https://echo.htmlacademy.ru" method="post" class="booking-form">
-              <p class="booking-form-date-from">
-                <label for="booking-date-from">Дата заезда:</label>
-                <input id="booking-date-from" type="date" name="date-from" value="2017-04-24" class="for">
-              </p>
-              <p class="booking-to-date-from">
-                <label for="booking-date-to">Дата выезда:</label>
-                <input id="booking-date-to" type="date" name="date-to"  value="2017-07-04">
-              </p>
-              <p class="booking-guests-number-from">
-                <label for="guests-number">Взрослые:</label>
-                <input id="guests-number" type="number" name="guests" min="1" value="2">
-              </p>
-              <p class="booking-childens-number-from">
-                <label for="childens-number">Дети:</label>
-                <input id="childrens-number" type="number" name="childens" min="0" value="0">
-              </p>
+              <div class="booking-form-date">
+                <p class="booking-form-date-from booking-form-date-flex">
+                  <label for="booking-date-from">Дата заезда:</label>
+                  <input id="booking-date-from" type="date" name="date-from" value="2017-04-24" class="for">
+                </p>
+                <p class="booking-to-date-from booking-form-date-flex">
+                  <label for="booking-date-to">Дата выезда:</label>
+                  <input id="booking-date-to" type="date" name="date-to"  value="2017-07-04">
+                </p>
+              </div>
+              <div class="booking-form-guests">
+                <p class="booking-guests-number-from">
+                  <label class="booking-form-guests-label" for="guests-number">Взрослые:</label>
+                  <input id="guests-number" type="number" name="guests" min="1" value="2">
+                </p>
+                <p class="booking-childens-number-from">
+                  <label class="booking-form-guests-label" for="childens-number">Дети:</label>
+                  <input id="childrens-number" type="number" name="childens" min="0" value="0">
+                </p>
+              </div>
               <button type="submit" class="booking-form-find-button">Найти</button>
             </form>
         </section>

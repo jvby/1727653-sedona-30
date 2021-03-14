@@ -37,6 +37,19 @@
   --basic-body-background: ##F2F2F2;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .page {
   height: 100%;
 }
@@ -475,14 +488,20 @@ a {
   text-transform: uppercase;
   grid-column: 2 / 3;
   grid-row: 1 / 2;
+  outline: none;
+  border: none;
 }
 
 .booking-button-find:hover {
   background-color: var(--basic-select-grey-button);
+  outline: none;
+  border: none;
 }
 
 .booking-button-find:active {
   color: var(--basic-push-grey-button);
+  outline: none;
+  border: none;
 }
 
 .booking-window {
@@ -508,21 +527,93 @@ a {
   justify-content: space-between;
 }
 
-.booking-form-date-from {
-  margin-top: 0;
+/* .booking-form-date label{
+  position: relative;
+  right: 30px;
+} */
+
+.booking-form-date-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 458px;
+  height: 38px;
 }
 
-.booking-form input {
+.booking-form-date input{
   background-color: var(--basic-normal-grey-input);
   border: 0;
+  width: 346px;
+  height: 38px;
+  justify-content: flex-end;
+  font-weight: 700;
 }
 
-.booking-form input:hover {
+.booking-form-date input:hover {
   background-color: var(--basic-select-grey-input);
   border: 0
 }
 
-.booking-form input:focus {
+.booking-form-date input:focus {
+  background-color: var(--basic-white);
+  border: 2px solid #E5E5E5;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.booking-form-date-from {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.booking-to-date-from {
+  margin-top: 29px;
+  margin-bottom: 0px;
+}
+
+.booking-form-guests {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 458px;
+  height: 38px;
+}
+
+.booking-guests-number-from {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 229px;
+  height: 38px;
+  margin-top: 0px;
+}
+
+.booking-childens-number-from {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 229px;
+  height: 38px;
+  margin-top: 0px;
+}
+
+.booking-childens-number-from label{
+  margin-left: 53px;
+}
+
+.booking-form-guests input {
+  background-color: var(--basic-normal-grey-input);
+  border: 0;
+  width: 114px;
+  height: 38px;
+}
+
+.booking-form-guests input:hover {
+  background-color: var(--basic-select-grey-input);
+  border: 0
+}
+
+.booking-form-guests input:focus {
   background-color: var(--basic-white);
   border: 2px solid #E5E5E5;
   box-sizing: border-box;
@@ -536,22 +627,25 @@ a {
   font-size: 21px;
   line-height: 27px;
   text-transform: uppercase;
-  border: 0;
   margin-top: 54;
   width: 458px;
   height: 58px;
+  outline: none;
+  border: none;
 }
 
 .booking-form-find-button:hover {
   background-color: var(--basic-select-blue-button);
   color: var(--basic-white);
+  outline: none;
+  border: none;
 }
 
 .booking-form-find-button:active {
   background-color: var(---basic-push-blues-button);
   color: var(--basic-white);
-  border: 0;
   outline: none;
+  border: none;
 }
 
 .booking-map {
@@ -626,15 +720,15 @@ a {
   height: 16px;
 }
 
-.social-button img {
+.social-button {
   background-color: var(--basic-normal-blue-button);
 }
 
-.social-button img:hover {
+.social-button:hover {
   background-color: var(--basic-select-blue-button);
 }
 
-.social-button img:active {
+.social-button:active {
   background-color: var(---basic-push-blues-button);
 }
 
