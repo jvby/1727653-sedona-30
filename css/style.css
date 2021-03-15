@@ -105,6 +105,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .site-navigation-left a {
@@ -138,6 +139,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .site-navigation-right a {
@@ -216,6 +218,7 @@ a {
   justify-content: space-around;
   padding-bottom: 30px;
   padding-top: 30px;
+  flex-wrap: wrap;
 }
 
 .feature-one-title h2 {
@@ -238,6 +241,7 @@ a {
   display: flex;
   justify-content: space-around;
   align-items: baseline;
+  flex-wrap: wrap;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -252,6 +256,7 @@ a {
   height: 220px;
   margin-top: auto;
   margin-bottom: auto;
+  flex-wrap: wrap;
 }
 
 .infrastructure-housing b {
@@ -271,6 +276,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  flex-wrap: wrap;
   align-items: center;
   width: 400px;
   height: 220px;
@@ -295,6 +301,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  flex-wrap: wrap;
   align-items: center;
   width: 400px;
   height: 220px;
@@ -326,6 +333,7 @@ a {
 .feature-two-title {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   justify-content: space-around;
   padding-bottom: 30px;
   padding-top: 30px;
@@ -364,6 +372,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   height: 155px;
   width: 400px;
@@ -395,6 +404,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   height: 155px;
   width: 400px;
@@ -424,6 +434,7 @@ a {
 .feature-five-title {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   height: 155px;
@@ -455,6 +466,7 @@ a {
   height: 205px;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
@@ -523,6 +535,7 @@ a {
   height: 285px;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
@@ -535,6 +548,7 @@ a {
 .booking-form-date-flex {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 458px;
   height: 38px;
@@ -574,6 +588,7 @@ a {
 .booking-form-guests {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 458px;
   height: 38px;
@@ -582,6 +597,7 @@ a {
 .booking-guests-number-from {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 229px;
   height: 38px;
@@ -591,6 +607,7 @@ a {
 .booking-childens-number-from {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 229px;
   height: 38px;
@@ -621,6 +638,7 @@ a {
 }
 
 .booking-form-find-button {
+  display: block;
   color: var(--basic-white);
   background-color: var(--basic-normal-blue-button);
   font: inherit;
@@ -680,8 +698,10 @@ a {
 
 .social-footer {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .social-button {
@@ -693,6 +713,7 @@ a {
 
 .footer-social-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   list-style: none;
@@ -701,6 +722,7 @@ a {
 }
 .social-button {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
@@ -734,6 +756,7 @@ a {
 
 .footer-copyright {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   line-height: 26px;
@@ -786,6 +809,7 @@ a {
   font-weight: 400;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   justify-content: space-between;
   height: 100px;
   padding-bottom: 32px;
@@ -813,6 +837,7 @@ a {
   font-weight: 400;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   justify-content: space-between;
   height: 100px;
   padding-bottom: 32px;
@@ -820,11 +845,41 @@ a {
 
 .main-catalog-fildset-infrastructure-list-flex {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 
+.filter-input-checkbox+label::before {
+  content: "";
+  position: absolute;
+  left: -42px;
+  top: 0;
+  width: 23px;
+  height: 23px;
+  border: 2px solid var(--basic-white);
+  border-radius: 3px;
+}
+
+.filter-input-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: -36px;
+  width: 23px;
+  height: 23px;
+  /* background-color: green; */
+  background-image: url("../img/check.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
 .main-catalog-fildset-infrastructure-list-flex label {
-  margin-left: 17px;
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+  margin-left: 40px;
+  padding-top: 3px;
 }
 
 .main-catalog-fildset-price-form {
@@ -893,6 +948,7 @@ a {
 }
 .main-catalog-sorting {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
@@ -1026,6 +1082,7 @@ a {
 
 .main-catalog-result-list-container {
   display: flex;
+  flex-wrap: wrap;
   margin-left: 73px;
   height: 150px;
   align-items: center;
@@ -1075,6 +1132,7 @@ a {
   color: var(--basic-white);
   text-decoration: none;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
@@ -1097,6 +1155,7 @@ a {
   color: var(--basic-white);
   text-decoration: none;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
@@ -1115,6 +1174,7 @@ a {
   /* margin-right: 73px; */
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: flex-end;
   margin-left: auto;
   margin-right: 73px;
@@ -1129,6 +1189,7 @@ a {
   margin-top: 40px;
   margin-bottom: 0px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
