@@ -35,6 +35,8 @@
   --basic-normal-grey-rating: #F2F2F2;
   --basic-white: #FFFFFF;
   --basic-body-background: ##F2F2F2;
+  --basic-white-opacity: rgba(255, 255, 255, .3);
+  --basic-toggle-shadow: rgba(171,171,171, .3);
 }
 
 .visually-hidden {
@@ -891,26 +893,109 @@ a {
 }
 
 .main-catalog-fildset-price {
-  /* grid-row: 1 / 2; */
-  /* grid-column: 3 / 4; */
+  display: flex;
+  flex-direction: column;
   border: 0;
-  /* text-align: left; */
-  /* z-index: 1; */
-
+  margin-top: 26px;
+  margin-bottom: 0px;
 }
 
 .main-catalog-fildset-price-name {
   font-size: 16px;
+  margin-right: auto;
 }
 
 .main-catalog-fildset-price-list {
+  display: flex;
+  justify-content: space-between;
   list-style: none;
   margin: 0;
   padding: 0;
   font-weight: 400;
+  width: 317px;
+  height: 36px;
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+.main-catalog-fildset-price-list-field {
+  display: flex;
+  width: 158px;
+  height: 34px;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-catalog-fildset-price-list-field input{
+  border: none;
+  background: none;
+  color: var(--basic-white);
+  text-align: center;
+}
+
+.main-catalog-fildset-price-list-field-dash input{
+  border-right: 2px solid #FFFFFF;
+
+}
+
+.range-controls {
+  position: relative;
+  height: 15px;
+  margin-bottom: 15px;
+  padding-top: 18px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-radius: 5px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  width: 310px;
+  background: var(--basic-white-opacity);
+}
+
+.range-controls .bar {
+  width: 65%;
+  height: 2px;
+  background: var(--basic-white);
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 11px;
+  left: 0;
+  width: 3px;
+  height: 3px;
+  padding: 0;
+  border: 6px solid #ffffff;
+  background-color: #ababab;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 var(--basic-toggle-shadow);
+  cursor: pointer;
+}
+
+.range-controls .toggle:hover {
+  top: 9px;
+  width: 4px;
+  height: 4px;
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 var(--basic-toggle-shadow);
+}
+
+.range-controls .toggle-min {
+  left: 15px;
+}
+
+.range-controls .toggle-max {
+  left: 220px;
 }
 
 .main-catalog-fildset-confirm-button {
+  width: 137px;
+  height: 36px;
   border: 2px solid white;
   font: inherit;
   color: var(--basic-white);
