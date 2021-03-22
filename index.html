@@ -9,14 +9,14 @@
   </head>
   <body class="page-body">
     <header class="main-header">
-      <nav>
+      <nav class="navigation-container">
         <ul class="site-navigation-list">
-          <li class="site-navigation-list-left"><a href="#">Информация</a></li>
-          <li class="site-navigation-list-left"><a href="#">Фото и видео</a></li>
-          <li class="navigation-logo-container"><img class="navigation-logo" src="img/logo.png"  width="138" height="70"  alt="Логотип города Седона"></li>
-          <li class="site-navigation-list-right"><a href="#">Карта штата</a></li>
-          <li class="site-navigation-list-right"><a href="catalog.html">Гостиницы</a></li>
+          <li class="site-navigation-list-info"><a href="#">Информация</a></li>
+          <li class="site-navigation-list-foto"><a href="#">Фото и видео</a></li>
+          <li class="site-navigation-list-map"><a href="#">Карта штата</a></li>
+          <li class="site-navigation-list-hotel"><a href="catalog.html">Гостиницы</a></li>
         </ul>
+          <a class="navigation-logo"><img src="img/logo.png"  width="138" height="70"  alt="Логотип города Седона"></a>
       </nav>
     </header>
     <main class="main-container">
@@ -115,14 +115,14 @@
               <div class="booking-form-date">
                 <p class="booking-form-date-from booking-form-date-flex">
                   <label for="booking-date-from">Дата заезда:</label>
-                  <input id="booking-date-from" type="text" name="date-from" value="2017-04-24" class="for">
+                  <input id="booking-date-from" type="text" name="date-from" value="24 АПРЕЛЯ 2017" class="for">
                   <p class="booking-date-from-calendar">
                     <button class="booking-date-from-calendar-button"></button>
                   </p>
                 </p>
                 <p class="booking-to-date-from booking-form-date-flex">
                   <label for="booking-date-to">Дата выезда:</label>
-                  <input id="booking-date-to" type="text" name="date-to"  value="2017-07-04">
+                  <input id="booking-date-to" type="text" name="date-to"  value="4 ИЮЛЯ 2017">
                   <p class="booking-date-to-calendar">
                     <button class="booking-date-to-calendar-button"></button>
                   </p>
@@ -131,7 +131,7 @@
               <div class="booking-form-guests">
                 <p class="booking-guests-number-from">
                   <label class="booking-form-guests-label" for="guests-number">Взрослые:</label>
-                  <input id="guests-number" type="text" name="guests" min="1" value="2">
+                  <input id="guests-number" type="text" name="guests" value="2">
                   <p class="booking-guests-number-from-buttons">
                     <button class="booking-guests-number-from-plus"></button>
                     <button class="booking-guests-number-from-minus"></button>
@@ -139,7 +139,7 @@
                 </p>
                 <p class="booking-childens-number-from">
                   <label class="booking-form-guests-label" for="childens-number">Дети:</label>
-                  <input id="childrens-number" type="text" name="childens" min="0" value="0">
+                  <input id="childrens-number" type="text" name="childens" value="0">
                   <p class="booking-childens-number-from-buttons">
                     <button class="booking-childens-number-from-plus"></button>
                     <button class="booking-childens-number-from-minus"></button>
@@ -156,8 +156,8 @@
     </main>
     <footer class="main-footer">
       <div class="footer-contacts">
-        <p>#visitSEDONA</p>
-        <p>Тел: <a href="tel:+74956660106">+7 (495) 666-01-06</a></p>
+        <p class="footer-contacts-hashtag">#visitSEDONA</p>
+        <p class="footer-contacts-tel">Тел: <a href="tel:+74956660166">+7 (495) 666-01-66</a></p>
       </div>
       <section class="social-footer">
         <ul class="footer-social-list">
