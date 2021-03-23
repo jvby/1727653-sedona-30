@@ -10,8 +10,8 @@
 @font-face {
   font-family: "PT Sans";
   src: local("PT Sans Bold"),
-        url("../fonts/PTSans.woff2") format("woff2"),
-        url("../fonts/PTSans.woff") format("woff");
+        url("../fonts/PTSans-Bold.woff2") format("woff2"),
+        url("../fonts/PTSans-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
