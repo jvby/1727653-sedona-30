@@ -194,9 +194,21 @@ a {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 209px;
-  background-image: url(../img/logo-back.jpg);
+  background: url(../img/logo-back.jpg) no-repeat;
   width: 1200px;
   height: 725px;
+  position: relative;
+}
+
+.main-logo::before {
+  content: "";
+  display: block;
+  width: 1200px;
+  height: 57px;
+  background: url("../img/logo-back-mask.svg") no-repeat;
+  bottom: 216px;
+  left: 0;
+  position: absolute;
 }
 
 .main-logo-container {
