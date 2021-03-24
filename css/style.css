@@ -638,6 +638,14 @@ a {
   outline: none;
 }
 
+.booking-from-date-input {
+  margin-left: 23px;
+}
+
+.booking-to-date-input {
+  margin-left: 18px;
+}
+
 .booking-form-date-from {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -655,7 +663,7 @@ a {
   justify-content: space-between;
   width: 458px;
   height: 38px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .booking-guests-number-from {
@@ -688,7 +696,7 @@ a {
   border: none;
   width: 21px;
   height: 23px;
-  top: -30px;
+  top: -13px;
   right: 10px;
   background: url(../img/calendar.svg);
 }
@@ -711,7 +719,7 @@ a {
   border: none;
   width: 21px;
   height: 23px;
-  top: -30px;
+  top: -13px;
   right: 10px;
   background: url(../img/calendar.svg);
 }
@@ -734,7 +742,7 @@ a {
   border: none;
   width: 11px;
   height: 11px;
-  top: -11px;
+  top: -4px;
   right: 16px;
   background: url(../img/plus.svg);
 }
@@ -753,7 +761,7 @@ a {
   border: none;
   width: 12px;
   height: 3px;
-  top: -7px;
+  top: 0px;
   right: 92px;
   background: url(../img/minus.svg);
 }
@@ -776,7 +784,7 @@ a {
   border: none;
   width: 11px;
   height: 11px;
-  top: -11px;
+  top: -4px;
   right: 12px;
   background: url(../img/plus.svg);
 }
@@ -795,7 +803,7 @@ a {
   border: none;
   width: 12px;
   height: 3px;
-  top: -7px;
+  top: 0px;
   right: 88px;
   background: url(../img/minus.svg);
 }
@@ -822,7 +830,8 @@ a {
   line-height: 26px;
   font-weight: 700;
   box-sizing: border-box;
-  margin-top: 1px;
+  margin-left: 38px;
+  margin-top: 2px;
   margin-right: 3px;
   padding-bottom: 2px;
 }
@@ -849,7 +858,8 @@ a {
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
-  margin-top: 1px;
+  margin-left: 25px;
+  margin-top: 2px;
   padding-bottom: 2px;
   box-sizing: border-box;
 }
@@ -1017,23 +1027,28 @@ a {
   margin-right: 8px;
 }
 
-.footer-copyright-img {
+/* .footer-copyright-img {
   width: 115px;
   height: 41px;
   background: url(../img/logo-htmlacademy.svg);
+} */
+
+.footer-copyright-svg:hover path {
+  fill: "#81B3D2";
+  /* background: url(../img/logo-htmlacademy-hover.svg); */
 }
 
-.footer-copyright-img:hover {
-  background: url(../img/logo-htmlacademy-hover.svg);
-}
-
-.footer-copyright-img:active {
-  background: url(../img/logo-htmlacademy-active.svg);
+.footer-copyright-svg:active path {
+  fill: "#BDBBBC";
+  /* background: url(../img/logo-htmlacademy-active.svg); */
 }
 
 .main-catalog-fildset {
   background-color: var(--basic-blue);
   color: var(--basic-white);
+  background-image: url(../img/background.jpg);
+  width: 1200px;
+  height: 217px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
@@ -1404,15 +1419,15 @@ a {
   margin-right: 73px;
   margin-top: auto;
   margin-bottom: auto;
-  width: 100px;
-  height: 40px;
+  display: flex;
 }
 
 .main-catalog-sorting-up {
+  display: block;
   text-decoration: none;
   outline: none;
-  margin-top: 8px;
-  margin-right: 6px;
+  margin-top: 6px;
+  margin-right: 12px;
   background-color: var(--basic-white);
   border: 0;
   background-image: url(../img/icon-up-normal.svg);
@@ -1429,10 +1444,11 @@ a {
 }
 
 .main-catalog-sorting-down {
+  display: block;
   text-decoration: none;
   outline: none;
   background-color: var(--basic-white);
-  margin-top: 8px;
+  margin-top: 5px;
   border: 0;
   background-image: url(../img/icon-down-active.svg);
   width: 11px;
